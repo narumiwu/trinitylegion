@@ -1105,12 +1105,6 @@ function sendMessageToTelegram($token, $chat_id, $message) {
     $context  = stream_context_create($options);
     @file_get_contents($url, false, $context);
 }
-
-// Kirim hanya sekali per sesi
-if (!isset($_SESSION['telegram_notified'])) {
-    sendMessageToTelegram($telegram_token, $chat_id, $message);
-    $_SESSION['telegram_notified'] = true;
-}
 ?>
 
 <?php echo '
