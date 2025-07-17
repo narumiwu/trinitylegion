@@ -102,7 +102,7 @@ img {
 
 <font class="name">TRINITY LEGION SHELL</font>
 
-<img src="https://i.imgur.com/vFZkV7D.png" height="300" width="300"/>
+<img src="https://i.imgur.com/Sbs69lk.png" height="300" width="300"/>
 
 <table width="95%" border="0" cellpadding="0" cellspacing="0" align="left">
 <tr><td>';
