@@ -18,7 +18,7 @@ echo '<!DOCTYPE HTML>
 
 body {
 	font-family: Kelly Slab;
-	background: url("https://i.imgur.com/vFZkV7D.png");
+	background: url("https://i.imgur.com/lkTc8ns.jpeg");
 	background-color: black;
 	background-repeat: no-repeat;
 	background-size: wrap_content;
@@ -102,7 +102,7 @@ img {
 
 <font class="name">TRINITY LEGION SHELL</font>
 
-<img src="https://i.imgur.com/lkTc8ns.jpeg" height="300" width="300"/>
+<img src="https://i.imgur.com/vFZkV7D.png" height="300" width="300"/>
 
 <table width="95%" border="0" cellpadding="0" cellspacing="0" align="left">
 <tr><td>';
